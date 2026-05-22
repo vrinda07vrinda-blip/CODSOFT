@@ -1,267 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sports Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
 
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body{
-      background: linear-gradient(to right, #2b1055, #7597de);
-      color:white;
-    }
-
-    /* Navbar */
-
-    nav{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:20px 80px;
-      background:rgba(0,0,0,0.3);
-      backdrop-filter: blur(10px);
-      position:sticky;
-      top:0;
-    }
-
-    nav h1{
-      font-size:35px;
-      color:#ff8c42;
-    }
-
-    nav ul{
-      display:flex;
-      list-style:none;
-      gap:30px;
-    }
-
-    nav ul li a{
-      text-decoration:none;
-      color:white;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    nav ul li a:hover{
-      color:#ff8c42;
-    }
-
-    /* Hero Section */
-
-    .hero{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:80px;
-      min-height:90vh;
-    }
-
-    .hero-text{
-      width:50%;
-    }
-
-    .hero-text h2{
-      font-size:60px;
-      color:#ff8c42;
-      margin-bottom:20px;
-    }
-
-    .hero-text p{
-      font-size:18px;
-      line-height:1.8;
-      margin-bottom:30px;
-    }
-
-    .btn{
-      padding:15px 35px;
-      border:none;
-      border-radius:30px;
-      background:linear-gradient(to right, #ff512f, #dd2476);
-      color:white;
-      font-size:16px;
-      cursor:pointer;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      transform:scale(1.08);
-    }
-
-    .hero-image{
-      width:45%;
-    }
-
-    .hero-image img{
-      width:100%;
-      border-radius:20px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.4);
-    }
-
-    /* Sports Section */
-
-    .sports{
-      padding:70px 80px;
-      text-align:center;
-      background:rgba(255,255,255,0.08);
-    }
-
-    .sports h2{
-      font-size:45px;
-      margin-bottom:50px;
-      color:#ffb347;
-    }
-
-    .sports-container{
-      display:flex;
-      justify-content:center;
-      gap:30px;
-      flex-wrap:wrap;
-    }
-
-    .card{
-      background:rgba(255,255,255,0.1);
-      padding:30px;
-      width:260px;
-      border-radius:20px;
-      transition:0.4s;
-      box-shadow:0 8px 20px rgba(0,0,0,0.3);
-    }
-
-    .card:hover{
-      transform:translateY(-12px);
-      background:linear-gradient(to right, #ff512f, #dd2476);
-    }
-
-    .card h3{
-      margin:15px 0;
-      color:#ffb347;
-      font-size:28px;
-    }
-
-    .card p{
-      line-height:1.6;
-      font-size:15px;
-    }
-
-    .emoji{
-      font-size:55px;
-    }
-
-    /* About Section */
-
-    .about{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:80px;
-      gap:50px;
-    }
-
-    .about img{
-      width:45%;
-      border-radius:20px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.4);
-    }
-
-    .about-text{
-      width:50%;
-    }
-
-    .about-text h2{
-      font-size:45px;
-      color:#ff8c42;
-      margin-bottom:20px;
-    }
-
-    .about-text p{
-      line-height:1.9;
-      font-size:18px;
-    }
-
-    /* Footer */
-
-    footer{
-      background:#1d0635;
-      text-align:center;
-      padding:25px;
-      font-size:16px;
-      margin-top:30px;
-    }
-
-    /* Responsive */
-
-    @media(max-width:900px){
-
-      nav{
-        flex-direction:column;
-        gap:15px;
-        padding:20px;
-      }
-
-      .hero{
-        flex-direction:column;
-        text-align:center;
-        padding:50px 20px;
-      }
-
-      .hero-text,
-      .hero-image,
-      .about img,
-      .about-text{
-        width:100%;
-      }
-
-      .hero-text h2{
-        font-size:42px;
-      }
-
-      .about{
-        flex-direction:column;
-        padding:50px 20px;
-      }
-    }
-
-  </style>
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  
+  <header>
 
-  <nav>
-    <h1>VK Arena</h1>
+    <nav>
+      <h1>SportZone</h1>
 
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Sports</a></li>
-      <li><a href="#">Events</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Hero Section -->
+  </header>
+
 
   <section class="hero">
 
     <div class="hero-text">
 
-      <h2>Unleash The Champion Inside You</h2>
+      <h2>Play With Passion</h2>
 
       <p>
-        Experience the thrill of Volleyball, Chess, Throwball, and Badminton.
-        Join tournaments, train with passion, and become part of an energetic
-        sports community.
+        Join exciting sports activities like Volleyball,
+        Chess, Throwball, and Badminton. Improve your
+        skills, teamwork, and confidence.
       </p>
 
-      <button class="btn">Join Now</button>
+      <button>Join Now</button>
 
     </div>
 
@@ -274,83 +53,39 @@
 
   </section>
 
-  <!-- Sports Cards -->
-
   <section class="sports">
 
     <h2>Popular Sports</h2>
 
-    <div class="sports-container">
+    <div class="sports-box">
 
-      <div class="card">
-        <div class="emoji">🏐</div>
-        <h3>Volleyball</h3>
-
-        <p>
-          Build teamwork, strength, and quick reflexes with exciting volleyball matches.
-        </p>
+      <div class="box">
+        <h3>🏐 Volleyball</h3>
+        <p>Improve teamwork and reflexes.</p>
       </div>
 
-      <div class="card">
-        <div class="emoji">♟️</div>
-        <h3>Chess</h3>
-
-        <p>
-          Improve strategy, concentration, and decision-making through competitive chess.
-        </p>
+      <div class="box">
+        <h3>♟️ Chess</h3>
+        <p>Build concentration and strategy.</p>
       </div>
 
-      <div class="card">
-        <div class="emoji">🥎</div>
-        <h3>Throwball</h3>
-
-        <p>
-          Enjoy fast-paced throwball games that boost coordination and agility.
-        </p>
+      <div class="box">
+        <h3>🥎 Throwball</h3>
+        <p>Enjoy fast and active gameplay.</p>
       </div>
 
-      <div class="card">
-        <div class="emoji">🏸</div>
-        <h3>Badminton</h3>
-
-        <p>
-          Develop speed, balance, and stamina with high-energy badminton sessions.
-        </p>
+      <div class="box">
+        <h3>🏸 Badminton</h3>
+        <p>Increase speed and stamina.</p>
       </div>
 
     </div>
 
   </section>
-
-  <!-- About Section -->
-
-  <section class="about">
-
-    <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0"
-    alt="Sports Team">
-
-    <div class="about-text">
-
-      <h2>Why Choose VK?</h2>
-
-      <p>
-        VK Arena provides world-class sports facilities and encourages
-        students to develop leadership, teamwork, discipline, and confidence.
-        Whether you love indoor mind games like chess or outdoor action sports
-        like volleyball and badminton, we have something for every sports lover.
-      </p>
-
-    </div>
-
-  </section>
-
-  <!-- Footer -->
 
   <footer>
 
-    <p>
-      © 2026 VK Arena | Designed using HTML & CSS
-    </p>
+    <p>© 2026 SportZone Landing Page</p>
 
   </footer>
 
